@@ -9,7 +9,7 @@ namespace XUnitTestProject1
     public class UnitTest1
     {
         [Fact]
-        public void ShouldReturnListOfUsers()
+        public void ShouldReturnListOfUsersWithoutPassword()
         {
             // Arrange
             var users = new List<User>()
@@ -28,6 +28,20 @@ namespace XUnitTestProject1
                 },
             };
 
+            var usersDto = new List<UserDto>()
+            {
+                new UserDto()
+                {
+                    Username = "konto1",
+                    Email = "konto1@api.pl"
+                },
+                new UserDto()
+                {
+                    Username = "konto2",
+                    Email = "konto2@api.pl"
+                },
+            };
+
             var userRepository = new Mock<IRepository<User>>();
             userRepository.Setup(x => x.GetAll()).Returns(users);
             var userService = new UserService(userRepository.Object);
@@ -37,8 +51,20 @@ namespace XUnitTestProject1
             var result = userController.Get();
 
             // Assert
-            Assert.Equal(users, result);
+            Assert.Equal(usersDto, result);
 
+        }
+    }
+
+    public class UserDto
+    {
+        public string Username { get; set; }
+        public string Email { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            // ?
+            return base.Equals(obj);
         }
     }
 
@@ -51,7 +77,7 @@ namespace XUnitTestProject1
             this._userService = userService;
         }
 
-        public List<User> Get()
+        public List<UserDto> Get()
         {
             var users = _userService.GetUser();
             return users;
@@ -60,7 +86,7 @@ namespace XUnitTestProject1
 
     public interface IUserService
     {
-        List<User> GetUser();
+        List<UserDto> GetUser();
     }
 
     public class UserService : IUserService
@@ -72,10 +98,13 @@ namespace XUnitTestProject1
             this._userRepository = userRepository;
         }
 
-        public List<User> GetUser()
+        public List<UserDto> GetUser()
         {
+            throw new NotImplementedException();
+            /*
             var users = _userRepository.GetAll();
             return users;
+            */
         }
     }
 
