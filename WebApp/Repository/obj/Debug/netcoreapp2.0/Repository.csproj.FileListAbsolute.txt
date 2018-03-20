@@ -1,0 +1,11 @@
+C:\Projekty\naukadotnetcore\WebApp\Repository\bin\Debug\netcoreapp2.0\Repository.deps.json
+C:\Projekty\naukadotnetcore\WebApp\Repository\bin\Debug\netcoreapp2.0\Repository.dll
+C:\Projekty\naukadotnetcore\WebApp\Repository\bin\Debug\netcoreapp2.0\Repository.pdb
+C:\Projekty\naukadotnetcore\WebApp\Repository\bin\Debug\netcoreapp2.0\Data.dll
+C:\Projekty\naukadotnetcore\WebApp\Repository\bin\Debug\netcoreapp2.0\Data.pdb
+C:\Projekty\naukadotnetcore\WebApp\Repository\obj\Debug\netcoreapp2.0\Repository.csprojResolveAssemblyReference.cache
+C:\Projekty\naukadotnetcore\WebApp\Repository\obj\Debug\netcoreapp2.0\Repository.csproj.CoreCompileInputs.cache
+C:\Projekty\naukadotnetcore\WebApp\Repository\obj\Debug\netcoreapp2.0\Repository.AssemblyInfoInputs.cache
+C:\Projekty\naukadotnetcore\WebApp\Repository\obj\Debug\netcoreapp2.0\Repository.AssemblyInfo.cs
+C:\Projekty\naukadotnetcore\WebApp\Repository\obj\Debug\netcoreapp2.0\Repository.dll
+C:\Projekty\naukadotnetcore\WebApp\Repository\obj\Debug\netcoreapp2.0\Repository.pdb

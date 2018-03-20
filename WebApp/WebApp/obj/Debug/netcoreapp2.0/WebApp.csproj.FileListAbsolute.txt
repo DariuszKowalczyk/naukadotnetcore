@@ -9,3 +9,9 @@ C:\Projekty\naukadotnetcore\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.Assembl
 C:\Projekty\naukadotnetcore\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.AssemblyInfo.cs
 C:\Projekty\naukadotnetcore\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.dll
 C:\Projekty\naukadotnetcore\WebApp\WebApp\obj\Debug\netcoreapp2.0\WebApp.pdb
+C:\Projekty\naukadotnetcore\WebApp\WebApp\bin\Debug\netcoreapp2.0\Data.dll
+C:\Projekty\naukadotnetcore\WebApp\WebApp\bin\Debug\netcoreapp2.0\Repository.dll
+C:\Projekty\naukadotnetcore\WebApp\WebApp\bin\Debug\netcoreapp2.0\Service.dll
+C:\Projekty\naukadotnetcore\WebApp\WebApp\bin\Debug\netcoreapp2.0\Service.pdb
+C:\Projekty\naukadotnetcore\WebApp\WebApp\bin\Debug\netcoreapp2.0\Data.pdb
+C:\Projekty\naukadotnetcore\WebApp\WebApp\bin\Debug\netcoreapp2.0\Repository.pdb

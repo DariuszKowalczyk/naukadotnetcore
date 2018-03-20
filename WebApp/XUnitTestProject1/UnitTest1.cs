@@ -1,7 +1,12 @@
+using Data.Dbmodels;
+using Data.ModelsDto;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
+using Repository.Interfaces;
+using Service.Services;
 using System;
 using System.Collections.Generic;
+using WebApp.Controllers;
 using Xunit;
 
 namespace XUnitTestProject1
@@ -54,73 +59,5 @@ namespace XUnitTestProject1
             Assert.Equal(usersDto, result);
 
         }
-    }
-
-    public class UserDto
-    {
-        public long Id { get; set; }
-        public string Username { get; set; }
-        public string Email { get; set; }
-
-        public override bool Equals(object obj)
-        {
-            var user = (UserDto)obj;
-            return user.Username == Username && user.Email == Email && user.Id == Id;
-        }
-    }
-
-    public class UserController : Controller
-    {
-        private UserService _userService;
-
-        public UserController(UserService userService)
-        {
-            this._userService = userService;
-        }
-
-        public List<UserDto> Get()
-        {
-            var users = _userService.GetUser();
-            return users;
-        }
-    }
-
-    public interface IUserService
-    {
-        List<UserDto> GetUser();
-    }
-
-    public class UserService : IUserService
-    {
-        private readonly IRepository<User> _userRepository;
-
-        public UserService(IRepository<User> userRepository)
-        {
-            this._userRepository = userRepository;
-        }
-
-        public List<UserDto> GetUser()
-        {
-            var users = _userRepository.GetAll();
-            var usersDto = new List<UserDto>();
-            users.ForEach(x => usersDto.Add(new UserDto() { Id = x.Id, Username = x.Username, Email = x.Email }));
-            return usersDto;
-        }
-    }
-
-    public interface IRepository<T> where T : Entity
-    {
-        List<T> GetAll();
-    }
-
-    public class User : Entity
-    {
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public string Email { get; set; }
-    }
-    public class Entity
-    {
-        public long Id { get; set; }
     }
 }

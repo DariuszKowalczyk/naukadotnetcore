@@ -10,7 +10,13 @@ C:\Projekty\naukadotnetcore\WebApp\XUnitTestProject1\obj\Debug\netcoreapp2.0\XUn
 C:\Projekty\naukadotnetcore\WebApp\XUnitTestProject1\obj\Debug\netcoreapp2.0\XUnitTestProject1.AssemblyInfoInputs.cache
 C:\Projekty\naukadotnetcore\WebApp\XUnitTestProject1\obj\Debug\netcoreapp2.0\XUnitTestProject1.AssemblyInfo.cs
 C:\Projekty\naukadotnetcore\WebApp\XUnitTestProject1\bin\Debug\netcoreapp2.0\XUnitTestProject1.pdb
-C:\Projekty\naukadotnetcore\WebApp\XUnitTestProject1\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
-C:\Projekty\naukadotnetcore\WebApp\XUnitTestProject1\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
 C:\Projekty\naukadotnetcore\WebApp\XUnitTestProject1\obj\Debug\netcoreapp2.0\XUnitTestProject1.dll
 C:\Projekty\naukadotnetcore\WebApp\XUnitTestProject1\obj\Debug\netcoreapp2.0\XUnitTestProject1.pdb
+C:\Projekty\naukadotnetcore\WebApp\XUnitTestProject1\bin\Debug\netcoreapp2.0\Data.dll
+C:\Projekty\naukadotnetcore\WebApp\XUnitTestProject1\bin\Debug\netcoreapp2.0\Repository.dll
+C:\Projekty\naukadotnetcore\WebApp\XUnitTestProject1\bin\Debug\netcoreapp2.0\Service.dll
+C:\Projekty\naukadotnetcore\WebApp\XUnitTestProject1\bin\Debug\netcoreapp2.0\WebApp.dll
+C:\Projekty\naukadotnetcore\WebApp\XUnitTestProject1\bin\Debug\netcoreapp2.0\Data.pdb
+C:\Projekty\naukadotnetcore\WebApp\XUnitTestProject1\bin\Debug\netcoreapp2.0\Repository.pdb
+C:\Projekty\naukadotnetcore\WebApp\XUnitTestProject1\bin\Debug\netcoreapp2.0\Service.pdb
+C:\Projekty\naukadotnetcore\WebApp\XUnitTestProject1\bin\Debug\netcoreapp2.0\WebApp.pdb
