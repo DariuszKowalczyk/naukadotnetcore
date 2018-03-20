@@ -58,13 +58,14 @@ namespace XUnitTestProject1
 
     public class UserDto
     {
+        public long Id { get; set; }
         public string Username { get; set; }
         public string Email { get; set; }
 
         public override bool Equals(object obj)
         {
-            // ?
-            return base.Equals(obj);
+            var user = (UserDto)obj;
+            return user.Username == Username && user.Email == Email && user.Id == Id;
         }
     }
 
@@ -100,11 +101,10 @@ namespace XUnitTestProject1
 
         public List<UserDto> GetUser()
         {
-            throw new NotImplementedException();
-            /*
             var users = _userRepository.GetAll();
-            return users;
-            */
+            var usersDto = new List<UserDto>();
+            users.ForEach(x => usersDto.Add(new UserDto() { Id = x.Id, Username = x.Username, Email = x.Email }));
+            return usersDto;
         }
     }
 
