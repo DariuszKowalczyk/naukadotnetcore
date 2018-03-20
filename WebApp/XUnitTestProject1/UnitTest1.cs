@@ -92,7 +92,7 @@ namespace XUnitTestProject1
 
     public class UserService : IUserService
     {
-        private IRepository<User> _userRepository;
+        private readonly IRepository<User> _userRepository;
 
         public UserService(IRepository<User> userRepository)
         {
