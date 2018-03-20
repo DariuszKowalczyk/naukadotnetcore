@@ -44,16 +44,17 @@ namespace XUnitTestProject1
 
     public class UserController : Controller
     {
-        private UserService userService;
+        private UserService _userService;
 
         public UserController(UserService userService)
         {
-            this.userService = userService;
+            this._userService = userService;
         }
 
         public List<User> Get()
         {
-            throw new NotImplementedException();
+            var users = _userService.GetUser();
+            return users;
         }
     }
 
@@ -73,7 +74,8 @@ namespace XUnitTestProject1
 
         public List<User> GetUser()
         {
-            throw new NotImplementedException();
+            var users = _userRepository.GetAll();
+            return users;
         }
     }
 
